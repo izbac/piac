@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria</title>
+    <style>
+    .row 
+    {
+        display: flex;
+        margin-left: 10%;
+        margin-bottom: 5%;
+    }
+    .column 
+    {
+        flex: 33.33%;
+        padding: 5px;
+    }
+    </style>
+</head>
+<body>
+    <div style="text-align: center; width: 45vw; margin-right: auto; margin-left: auto;">
+        <h1 style="font-size: 40px;">Galeria</h1>
+        <hr>
+    </div>
+    <div class="row">
+        <div class="column">
+          <img src="{{ url_for('static', filename='rose.jpg') }}" alt="">
+        </div>
+        <div class="column">
+          <img src="{{ url_for('static', filename='heart.jpg') }}" alt="">
+        </div>
+        <div class="column">
+          <img src="{{ url_for('static', filename='face.jpg') }}" alt="">
+        </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        <img src="{{ url_for('static', filename='face2.jpg') }}" alt="">
+      </div>
+      <div class="column">
+        <img src="{{ url_for('static', filename='dog.jpg') }}" alt="">
+      </div>
+      <div class="column">
+        <img src="{{ url_for('static', filename='butterfly.jpg') }}" alt="">
+      </div>
+  </div>
+</body>
+</html>
