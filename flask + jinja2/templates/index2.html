@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="shortcu icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <title>Strona główna</title>
+</head>
+<body>
+    <div style="overflow: auto; font-size: 25px;">
+        <img src="{{ url_for('static', filename='cat.jpg') }}" alt="cat" style="height: 22vh; float: left;">
+        <h1 syle="float: left; ">Strona główna</h1>
+        <hr>
+    </div>
+    <div style="text-align: center;">
+        <p><a href="aboutme" style="color: black; font-size: 25px;">O mnie</a></p>
+        <p><a href="gallery" style="color: black; font-size: 25px;">Galeria</a></p>
+        <p><a href="contact" style="color: black; font-size: 25px;">Kontakt</a></p>
+    </div>
+</body>
+</html>
